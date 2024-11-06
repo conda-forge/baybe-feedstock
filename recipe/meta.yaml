@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/baybe-{{ version }}.tar.gz
   sha256: 0a75bc28412797f37260c918289ed2a36733c9dde1672ea1878c46fb3960213c
-  patches:
-    - pyproject.patch
 
 build:
   noarch: python
