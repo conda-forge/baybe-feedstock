@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "baybe" %}
-{% set version = "0.11.4" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/baybe-{{ version }}.tar.gz
-  sha256: f035c6bca58e75dc9e4d4fb98a8d56f46664c5ef021d9c5d44be859aee551ae1
+  sha256: ddc62cfecaa2a60ca586f44afba483dc2d697d6553f782d7301bc89d1be967ff
 
 build:
   noarch: python
@@ -37,7 +37,7 @@ requirements:
     - protobuf >=3.20.3
     - scikit-learn >=1.1.1,<2
     - scikit-learn-extra >=0.3.0,<1
-    - scipy >=1.10.1,<2
+    - scipy >=1.10.1,<1.15
     - setuptools-scm >=7.1.0
     - pytorch >=1.13.1,<3
     - typing-extensions >=4.7.0
