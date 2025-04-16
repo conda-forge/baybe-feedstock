@@ -36,7 +36,6 @@ requirements:
     - pandas >=1.4.2,<3
     - protobuf >=3.20.3
     - scikit-learn <2.0,>=1.6
-    - scikit-learn-extra >=0.3.0,<1
     - scipy >=1.10.1
     - setuptools-scm >=7.1.0
     - pytorch >=1.13.1,<3
