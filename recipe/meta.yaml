@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "baybe" %}
-{% set version = "0.13.2" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/baybe-{{ version }}.tar.gz
-  sha256: 367b384bdfb91660908d0c31981a35e3caf1af364c98d90eea6afd189b140b12
+  sha256: bb9bff53d841bcb07ce9cc29a13e57609964874fdd809b6a5fe0472c56b30b4c
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - python >={{ python_min }},<3.13
     - attrs >=24.1.0
     - botorch >=0.13.0,<1
-    - cattrs >=24.1.0
+    - cattrs >=25.2.0
     - exceptiongroup
     - funcy >=1.17,<2
     - gpytorch >=1.9.1,<2
