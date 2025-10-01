@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "baybe" %}
-{% set version = "0.14.0" %}
+{% set version = "0.14.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/baybe-{{ version }}.tar.gz
-  sha256: bb9bff53d841bcb07ce9cc29a13e57609964874fdd809b6a5fe0472c56b30b4c
+  sha256: d27528e38fbc97d95b4a486f21bd7ba7efefbab88326d5ecb45bf4b1b2740c47
 
 build:
   noarch: python
