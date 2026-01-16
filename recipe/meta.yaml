@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "baybe" %}
-{% set version = "0.14.1" %}
+{% set version = "0.14.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/baybe-{{ version }}.tar.gz
-  sha256: d27528e38fbc97d95b4a486f21bd7ba7efefbab88326d5ecb45bf4b1b2740c47
+  sha256: 8b11a3c14528ae5d7356624d5a29c21014dbd49d7c733bfc39206187ddbe20d0
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
     - joblib >1.4.0,<2
     - typing_extensions >=4.7.0
     - python >={{ python_min }},<3.13
-    - attrs >=24.1.0
+    - attrs >=25.4.0
     - botorch >=0.13.0,<1
     - cattrs >=25.2.0
     - exceptiongroup
