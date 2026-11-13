@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: baybe
-  version: 0.15.0
+  version: "0.15.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/baybe-${{ version }}.tar.gz
-  sha256: c74858b6daee8dfcbddbb4d2113d033d8179c6f82565d4e51cea8ca546fbdecb
+  sha256: 8f1c28db992f2c165f984af883f9f49be7af3a24aa1eb2616aac087fce48f6fd
 
 build:
   number: 0
